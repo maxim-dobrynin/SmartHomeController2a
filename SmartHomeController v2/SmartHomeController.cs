@@ -28,6 +28,5 @@ public class Program
             device.GetStatus();
             Console.WriteLine();
         }
-    }
- 
+    } 
 }
