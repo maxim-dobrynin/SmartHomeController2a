@@ -33,6 +33,12 @@ namespace SmartHomeController
 
         }
 
+        public override void GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine($"Current temperature: {CurrentTemperature}, Target temperature: {TargetTemperature}");
+        }
+
 
 
     }

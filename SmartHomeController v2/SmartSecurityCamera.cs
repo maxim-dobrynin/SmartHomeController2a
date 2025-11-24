@@ -28,6 +28,13 @@ namespace SmartHomeController
             recordingStatus = false; // Default recording status
 
         }
+
+        public override void GetStatus()
+        {
+            base.GetStatus();
+            Console.WriteLine("This is a smart security camera.");
+            Console.WriteLine($"Resolution: {Resolution}");
+        }
      
     }
 }
