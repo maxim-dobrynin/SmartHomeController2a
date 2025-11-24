@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace SmartHomeController
 {
-    public class SmartSecurityCamera : SmartDevice
+    public class SmartSecurityCamera : SmartDevice // superclass - subclass relationship
     {
         // Private fields
         private string resolution;
@@ -22,7 +22,7 @@ namespace SmartHomeController
 
 
         // SmartSecurityCamera constructor
-        public SmartSecurityCamera(string cameraResolution)
+        public SmartSecurityCamera(int deviceID, string deviceName, string cameraResolution) : base(deviceID, deviceName)
         {
             this.Resolution = cameraResolution;
             recordingStatus = false; // Default recording status
